@@ -1,0 +1,149 @@
+/*=============
+Variables
+============== */
+
+:root {
+  --gray: #343a40;
+  --gray-light: #f8f9fa;
+  --main: #862e9c;
+  --main-light: #f8f0fc;
+  --main-light-one: #f3d9fa;
+  --white: #fff;
+  --off-white: #f7f7f7;
+  --mainTransition: all 0.3s linear;
+  --mainSpacing: 0.2rem;
+}
+/*=============
+  Global styles
+  ============== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: var(--gray);
+  background-color: var(--white);
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+h1,
+h2 {
+  text-transform: capitalize;
+  letter-spacing: -2px;
+  margin-bottom: 1.25rem;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  margin-bottom: 0;
+}
+p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+/* Button */
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  text-transform: capitalize;
+  border: 3px solid var(--main);
+  color: var(--main);
+  margin: 3rem;
+  transition: var(--mainTransition);
+}
+
+.btn:hover {
+  background-color: #862e9c;
+  color: var(--main-light-one);
+}
+/* Cards */
+.title {
+  text-align: center;
+  margin-bottom: 48px;
+}
+.cards {
+  padding: 4rem 0;
+}
+.cards-center {
+  width: 80vw;
+  max-width: 1170px;
+  margin: 2rem auto;
+}
+.card {
+  margin-bottom: 3rem;
+  background: var(--main-light-one);
+  border-radius: 5px;
+
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2), -3px -3px 10px #fff;
+}
+.card img {
+  height: 220px;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+.card-info {
+  padding: 1rem;
+}
+.card-info h3 {
+  font-size: 16px;
+  margin-bottom: 12px;
+  text-transform: capitalize;
+  letter-spacing: -0.5px;
+}
+.card-info p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Footer */
+.card-footer {
+  background: var(--main-light);
+  padding: 0.5rem 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* justify-items: center;
+  align-items: center; */
+  place-items: center;
+  border-radius: 0 0 5px 5px;
+}
+.icon {
+  width: 18px;
+  height: 18px;
+  stroke: var(--main);
+}
+
+/* @media screen and (min-width: 768px) {
+  .cards-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+  }
+}
+@media screen and (min-width: 1170px) {
+  .cards-center {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+} */
+.cards-center {
+  display: grid;
+  column-gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(268.5px, 1fr));
+}
+.card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+}

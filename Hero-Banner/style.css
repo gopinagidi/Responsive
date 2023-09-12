@@ -1,0 +1,101 @@
+/*=============
+Variables
+============== */
+
+:root {
+  --gray: #343a40;
+  --gray-light: #f8f9fa;
+  --main: #862e9c;
+  --main-light: #f8f0fc;
+  --main-light-one: #f3d9fa;
+  --white: #fff;
+  --off-white: #f7f7f7;
+  --mainTransition: all 0.3s linear;
+  --mainSpacing: 0.2rem;
+}
+/*=============
+Global styles
+============== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  color: var(--gray);
+  background-color: var(--white);
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+h1,
+h2,
+h3 {
+  text-transform: capitalize;
+  letter-spacing: -2px;
+  margin-bottom: 1.25rem;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  margin-bottom: 0;
+}
+p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+/* Button */
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  text-transform: capitalize;
+  border: 3px solid var(--main);
+  color: var(--main);
+  margin: 3rem;
+  transition: var(--mainTransition);
+}
+.btn:hover {
+  background-color: #862e9c;
+  color: var(--main-light-one);
+}
+/* Hero */
+.hero-header {
+  min-height: 100vh;
+  background: var(--main);
+  color: var(--main-light);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-banner p {
+  width: 80%;
+  max-width: 560px;
+}
+@media screen and (max-width: 600px) {
+  .hero-banner {
+   
+    padding: 0 3rem;
+ 
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url("../electronics/ele-1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+}

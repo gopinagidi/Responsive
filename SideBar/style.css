@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Rubik:wght@400;500;600;700&display=swap");
+
+:root {
+  --color: #4a4a70;
+  --second-color: #15163d;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: var(--color);
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+  background: aliceblue;
+}
+
+img:not(.nav-logo) {
+  display: block;
+  width: 100%;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+h2 {
+  font-size: 4rem;
+  line-height: 5.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+  line-height: 4rem;
+  text-align: center;
+  color: var(--second-color);
+}
+
+.section {
+  padding: 2rem 0;
+}
+
+.section-center {
+  width: 80vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+.nav-sidebar {
+  background: #fff;
+  max-width: 20rem;
+  padding: 1.5rem;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1), -3px -3px 5px rgb(247, 245, 245);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.nav-sidebar li {
+  height: 4.5rem;
+  width: 100%;
+  padding: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  color: var(--color);
+  transition: all 1s linear;
+}
+
+.nav-sidebar li:hover {
+  color: var(--second-color);
+  background: #dddde8;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.nav-sidebar li:hover .solid-icon {
+  stroke: var(--second-color);
+}
+
+.solid-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  stroke: var(--color);
+}
+.text {
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+}
+.line {
+  width: 15rem;
+  height: 0.1rem;
+  border-radius: 0.1rem;
+  background-color: var(--color);
+}

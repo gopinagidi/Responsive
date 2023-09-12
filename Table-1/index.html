@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Font Awsome link (Inter font)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Css Style Link -->
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      .table-container {
+        width: 100vw;
+        padding: 5rem 0;
+        /* background-color: aliceblue; */
+      }
+      .table-center {
+        width: 80vw;
+        max-width: 1170px;
+        margin:0 auto;
+        /* position: relative; */
+        /* display: grid;
+        place-items: center; */
+        /* justify-content: center;
+        align-items: center; */
+        
+        /* padding-left: -5rem; */
+      }
+
+      table {
+        width: 100%;
+        font-size: 18px;
+        border-collapse: collapse;
+        text-transform: capitalize;
+        
+      }
+      thead th {
+        background-color: blueviolet;
+        /* padding: 16px 24px; */
+        color: antiquewhite;
+      }
+      th,
+      td {
+        width: 25%;
+        padding: 16px 24px;
+        text-align: left;
+      }
+      tbody tr:nth-child(odd) {
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+      tbody tr:nth-child(even) {
+        background-color: rgba(0, 0, 0, 0.2);
+      }
+      /* @media screen and (max-width: 550px) {
+        .table-center {
+          padding-right: 5rem;
+        }
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="table-container">
+      <div class="table-center">
+        <table>
+          <thead>
+            <tr>
+              <th>name</th>
+              <th>study</th>
+              <th>school</th>
+              <th>vilage</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>siri</th>
+              <td>U.K.G</td>
+              <td>High School</td>
+              <td>Hyderbad</td>
+            </tr>
+            <tr>
+              <th>santosh</th>
+              <td>U.K.G</td>
+              <td>High School</td>
+              <td>Hyderbad</td>
+            </tr>
+            <tr>
+              <th>rupesh</th>
+              <td>U.K.G</td>
+              <td>High School</td>
+              <td>Hyderbad</td>
+            </tr>
+            <tr>
+              <th>vivek</th>
+              <td>U.K.G</td>
+              <td>High School</td>
+              <td>Hyderbad</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

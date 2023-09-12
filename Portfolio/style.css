@@ -1,0 +1,84 @@
+/* SPACING SYSTEM (px)
+======================
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+=====================
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Rubik:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+img:not(.nav-logo) {
+  display: block;
+  width: 100%;
+}
+
+h1,
+h2,
+h3 {
+  letter-spacing: -2px;
+}
+
+h1 {
+  line-height: 120%;
+  font-size: 40px;
+  margin-bottom: 24px;
+}
+h2 {
+  line-height: 120%;
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+h3 {
+  line-height: 120%;
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+h4 {
+  letter-spacing: -0.5px;
+  margin-bottom: 8px;
+  letter-spacing: -0.5px;
+}
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+button {
+  border: none;
+  background: transparent;
+  color: red;
+  text-transform: capitalize;
+  font-size: 1rem;
+  line-height: 24%;
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 52px;
+  }
+}
+
+.section-center{
+  width: 80%;
+  margin: 0 auto;
+}
+.card-center{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+  gap: 2rem 1rem;
+}

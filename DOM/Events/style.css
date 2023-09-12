@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+.head {
+    text-transform: capitalize;
+  /* font-size: 2.8rem;
+  line-height: 4.2rem; */
+  color: red;
+}
+.btn {
+  border: none;
+  background: rgb(235, 220, 217);
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: tomato;
+  border-radius: 0.5rem;
+  width:8rem ;
+  height: 4rem;
+  /* padding: 1rem 2rem; */
+}
+.btn:hover{
+    color: tomato;
+    cursor: pointer;
+    background: transparent;
+    border: 0.2rem solid tomato;
+    border-radius: 0.5rem;
+
+}

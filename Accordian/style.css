@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  line-height: 1;
+  background: aliceblue;
+}
+
+:root {
+  --main-color: #0b7285;
+  --gray-light: #adb5bd;
+  --gray-dark: #868e96;
+}
+.accordian {
+  width: 700px;
+  margin: 100px auto;
+  /* border-top: 4px solid var(--main-color); */
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  
+}
+.item {
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2) ,-3px -3px 10px #fff;
+    padding: 24px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    column-gap: 24px;
+    row-gap: 32px;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.number,
+.text {
+  font-size: 24px;
+  font-weight: 500;
+  /* color: var(--main-color); */
+}
+.number{
+    color: var(--gray-light);
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  stroke: var(--main-color);
+}
+.hidden-box {
+    grid-column: 2;
+    display: none;
+}
+.hidden-box p {
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+.hidden-box ul {
+  color: var(--gray-dark);
+  margin-left: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* this is not a good way because
+   to the last li element remove
+    margin bottom so we will go
+     to flex property */
+/* .hidden-box li {
+  margin-bottom: 12px;
+  
+} */
+
+.open{
+    border-top: 4px solid var(--main-color);
+}
+.open .number,.open .text{
+    color: var(--main-color);
+}
+.open .hidden-box{
+    display: block;
+
+}

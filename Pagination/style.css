@@ -1,0 +1,70 @@
+:root {
+  --main: #a61e4d;
+  --light: #fff0f6;
+  --color: #343a40;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+  background-color: aliceblue;
+  color: var(--color);
+  display: flex;
+  justify-content: center;
+}
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 200px;
+}
+
+.btn {
+  width: 48px;
+  height: 48px;
+  border: 1px solid var(--main);
+  border-radius: 50%;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn:hover {
+  background: var(--main);
+}
+.btn:hover .btn-icon {
+  stroke: var(--light);
+}
+.btn-icon {
+  width: 24px;
+  height: 24px;
+  stroke: var(--main);
+}
+.page-link:link,
+.page-link:visited {
+  font-size: 18px;
+  color: var(--color);
+  text-decoration: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-link:hover,
+.page-link:active,
+.page-link.page-link--current {
+  background-color: var(--main);
+  color: var(--light);
+}
+
+.dots {
+  color: #868e96;
+}
